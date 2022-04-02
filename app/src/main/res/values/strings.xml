@@ -2,8 +2,7 @@
     <string name="app_name">UTS PTIK B</string>
     <string name="judul">UJIAN TENGAH SEMESTER \n PEMROGRAMAN PERANGKAT MOBILE \n 30 MARET 2022</string>
     <string name="biodata">Muh Isbut Tahlil \n \n 1729042072</string>
-    <string name="program">PROGRAM HITUNG \n LUAS SEGITIGA</string>
-    <string name="hint_alas">Masukkan alas segitiga</string>
-    <string name="hint_tinggi">Masukkan tinggi segitiga</string>
-    <string name="button_hitung">HITUNG LUAS SEGITIGA</string>
+    <string name="program">PROGRAM HITUNG \n LUAS LINGKARAN</string>
+    <string name="hint_diameter">Masukkan diameter lingkaran</string>
+    <string name="button_hitung">HITUNG LUAS LINGKARAN</string>
 </resources>

@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText editAlas, editTinggi;
+    EditText editDiameter;
     Button buttonHitung;
     TextView luas;
 
@@ -20,18 +20,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editAlas        = (EditText) findViewById(R.id.editAlas);
-        editTinggi      = (EditText) findViewById(R.id.editTinggi);
+        editDiameter    = (EditText) findViewById(R.id.editDiameter);
         buttonHitung    = (Button) findViewById(R.id.buttonHitung);
         luas            = (TextView) findViewById(R.id.luas);
 
         buttonHitung.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int alas = Integer.parseInt(editAlas.getText().toString());
-                int tinggi = Integer.parseInt(editTinggi.getText().toString());
+                double diameter = Double.valueOf(editDiameter.getText().toString());
+                double r        = diameter / 2;
+                double pi       = 3.14;
 
-                int hasil = alas * tinggi / 2;
+                double hasil = pi * r * r;
 
                 luas.setText(String.valueOf(hasil));
 

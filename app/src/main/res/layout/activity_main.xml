@@ -11,6 +11,16 @@
         android:layout_height="wrap_content"
         android:scrollbarTrackVertical="@drawable/maxresdefault">
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="393dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_jtik8" />
+
         <TextView
             android:id="@+id/textView1"
             android:layout_width="297dp"
@@ -64,40 +74,28 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
         <EditText
-            android:id="@+id/editAlas"
+            android:id="@+id/editDiameter"
             android:layout_width="251dp"
             android:layout_height="42dp"
             android:layout_marginTop="20dp"
             android:ems="10"
-            android:hint="@string/hint_alas"
+            android:hint="@string/hint_diameter"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.506"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
-        <EditText
-            android:id="@+id/editTinggi"
-            android:layout_width="251dp"
-            android:layout_height="42dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:hint="@string/hint_tinggi"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editAlas" />
-
         <Button
             android:id="@+id/buttonHitung"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:text="@string/button_hitung"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTinggi" />
+            app:layout_constraintTop_toBottomOf="@+id/editDiameter" />
 
         <TextView
             android:id="@+id/luas"
@@ -113,16 +111,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/buttonHitung"
             app:layout_constraintVertical_bias="0.0" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="393dp"
-            android:layout_height="136dp"
-            android:layout_marginTop="4dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/logo_jtik8" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
